@@ -1,0 +1,14 @@
+{
+  "name": "youtube-jq",
+  "version": "1.0.0",
+  "description": "Simple Youtube Search using their API and jQuery",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "BT",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

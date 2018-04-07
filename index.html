@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Youtube Search Videos </title>
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- 1. Add latest jQuery and fancyBox files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.fancybox').fancybox();
+      });
+    </script>
+    		<script src="scripts/script.js"></script>
+	</head>   
+	<body>
+		<div id="container">
+			<header>
+				<h1>Search <span class="awesome">Videos</span></h1>
+				<p>Search for Youtube Videos</p>
+			</header>
+			<section>
+				<form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fieldcontainer">
+						<input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+						<input type="submit" name="search-btn" id="search-btn" value="">
+					</div>
+				</form>
+				<ul id="results"></ul>		<!-- where we'll list search entries -->
+				<div id="buttons"></div>  <!-- will contain forward and backward buttons -->
+			</section>
+			<footer>
+				<p>Created and copyrighted &copy; by an <span class="awesome">awesome</span> tutor.</p>
+			</footer>
+		</div>
+	</body>
+</html> 
